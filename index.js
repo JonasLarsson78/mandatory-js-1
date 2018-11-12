@@ -36,5 +36,12 @@ tableHead.deleteCell(0);
 tableHead.appendChild(addThead1);
 tableHead.appendChild(addThead2);
 
+let myCss = document.querySelector("head");
+let addCss  = document.createElement("link");
+addCss.setAttribute('href', 'main.css');
+addCss.setAttribute('rel', 'stylesheet');
+addCss.setAttribute('type', 'text/css');
+myCss.appendChild(addCss);
+
 document.title = "Fruits & Vegetables Corp";
 
